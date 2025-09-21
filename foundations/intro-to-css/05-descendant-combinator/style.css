@@ -1,1 +1,7 @@
-/* Add CSS Styling */
+.container .text {
+    background-color: antiquewhite;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: crimson;
+    text-align: center;
+}
