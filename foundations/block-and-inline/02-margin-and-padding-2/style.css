@@ -4,12 +4,20 @@ body {
 }
 
 .card {
-  width: 400px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  width: 600px;
   background: #fff;
-  margin: 16px auto;
+  padding: min(0.5em, 10%);
+  margin: 2rem auto;
 }
 
 .title {
+  font-size: 16px;
+  margin: 0;
+  margin-top: 1em;
   background: #e3f4ff;
 }
 
@@ -17,11 +25,19 @@ body {
   background: #e3f4ff;
 }
 
-.button-container {
+.button-container, button {
+  font-size: 1rem;
+  text-align: center;
+  padding: min(0.5em, 5%);
   background: #e3f4ff;
 }
 
 button {
+  box-sizing: border-box;
+  display: block;
+  margin: auto;
+  font-size: 1.5rem;
+  padding: min(0.4em, 5%);
   background: white;
   border: 1px solid #eee;
 }
