@@ -11,9 +11,6 @@ body {
 
 img {
   width: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 button {
@@ -21,6 +18,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 16px;
 }
 
 input {
@@ -32,56 +30,32 @@ input {
 
 .header {
   display: flex;
-  flex-direction: row;
-}
-
-.header .left-links {
-  display: flex;
-  justify-content: flex-start;
-  gap: min(1em, 10%);
-}
-
-.header .right-links {
-  display: flex;
-  justify-content: flex-end;
-  margin-left: auto;
-  gap: min(1em, 10%);
+  justify-content: space-between;
+  padding: 1em;
 }
 
 .content {
+  flex: 1;
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  margin: auto;
-  max-width: 600px;
-  font-size: 1em;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .footer {
   background-color: bisque;
   display: flex;
-}
-
-.footer .left-links {
-  display: flex;
-  justify-content: flex-start;
-  gap: min(1em, 10%);
-}
-
-.footer .right-links {
-  display: flex;
-  justify-content: flex-end;
-  margin-left: auto;
-  gap: min(1em, 10%);
+  justify-content: space-between;
+  padding: 1em;
 }
 
 ul {
+  display: flex;
   list-style: none;
-  text-decoration: none;
-  padding: 1em;
   margin: 0;
-  color: black;
+  padding: 0;
+  gap: 16px;
 }
 
 a {
